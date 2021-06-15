@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+    />
+    <style>
+      .top {
+        background-color: #565656;
+        height: 200px;
+        position: relative;
+      }
+      img {
+        position: absolute;
+
+        border-radius: 50%;
+        border: 4px dotted #fbbe28;
+        margin-top: 60px;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .nametag {
+        position: absolute;
+        background-color: #fbbe28;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 35px;
+        border-radius: 5px;
+      }
+      .middle {
+        background-color: whitesmoke;
+        height: 30px;
+        padding-top: 0px;
+        position: hidden;
+      }
+      .bottom {
+        background-color: #565656;
+        height: 30px;
+        padding-top: 0px;
+      }
+      .address {
+        text-align: center;
+      }
+      #icons {
+        color: rgb(255, 187, 0);
+        background-color: rgb(73, 72, 72);
+        border-radius: 50%;
+        border: 4px double rgb(255, 187, 0);
+        padding: 10px;
+      }
+      .body {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      .slidecontainer {
+        width: 100px;
+      }
+      .slider {
+        width: 100px;
+      }
+      input[type="range"] {
+        overflow: hidden;
+        width: 100px;
+        -webkit-appearance: none;
+        background-color: white;
+        border-radius: 50px;
+      }
+
+      input[type="range"]::-webkit-slider-thumb {
+        width: 10px;
+        -webkit-appearance: none;
+        height: 10px;
+        background: white;
+        box-shadow: -80px 0 0 80px #fbbe28;
+        border-radius: 50%;
+      }
+      input[type="range"] {
+        overflow: hidden;
+        width: 100px;
+        -webkit-appearance: none;
+        background-color: rgb(189, 185, 185);
+        border-radius: 50px;
+      }
+      
+      .topics {
+        font-family: Arial;
+        font-size: 25px;
+      }
+      .col1 {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .col2 {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .centring {
+        display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <img
+          src="https://www.pinkvilla.com/files/styles/contentpreview/public/robert_downey_jr_opens_up_on_playing_iron_man.jpg?itok=f9MZbTP1"
+          height="150px"
+          width="150px"
+          alt="Resume Image"
+       
+        />
+        <p class="nametag" style="margin-top: 115px">ROBERT DOWNEY</p>
+      </div>
+      <div class="middle"></div>
+      <div class="bottom"></div>
+      <div class="address">
+        <p style="text-align: center">
+          N.Damen Avenue, Chicago 99999 |999-999-9999| hello@kickresume.com
+          |wwww.kickresume.com
+        </p>
+        <hr />
+      </div>
+      <div class="body">
+        <div class="row">
+          <div
+            class="col"
+            style="border-right: 2px solid rgba(105, 105, 105, 0.7)"
+          >
+            <div class="col1">
+              <p>
+                <i class="fa fa-user" aria-hidden="true" id="icons"></i
+                ><span class="topics"> PROFILE </span>
+              </p>
+              <p style="text-align: justify">
+                Innovative optimized solution seeker. Excited to be at the
+                development phase of my career as a web developer. I am
+                ambitious, adventurous, assiduous, animated and an alliteration
+                advocate.
+              </p>
+              <!-- SKILLS -->
+              <p>
+                <i class="fa fa-flask" aria-hidden="true" id="icons"></i>
+                <span class="topics"> SKILLS </span>
+              </p>
+              <!-- Techincal Skills -->
+              <p>
+                <b class="centring">Techincal Skills</b>
+              </p>
+              <br />
+              <div class="slidecontainer">
+                JavaScript
+                <input
+                  type="range"
+                  min="1"
+                  max="100"
+                  value="80"
+                  class="slider"
+                  id="myRange"
+                />
+                <br />
+                CSS
+                <input
+                  type="range"
+                  min="1"
+                  max="100"
+                  value="90"
+                  class="slider"
+                  id="myRange"
+                />
+                <br />
+                HTML
+                <input
+                  type="range"
+                  min="1"
+                  max="100"
+                  value="70"
+                  class="slider"
+                  id="myRange"
+                />
+                <br />
+                React
+                <input
+                  type="range"
+                  min="1"
+                  max="100"
+                  value="75"
+                  class="slider"
+                  id="myRange"
+                />
+                <br />
+                Redux
+                <input
+                  type="range"
+                  min="1"
+                  max="100"
+                  value="60"
+                  class="slider"
+                  id="myRange"
+                />
+                <br />
+                Mongo
+                <input
+                  type="range"
+                  min="1"
+                  max="100"
+                  value="80"
+                  class="slider"
+                  id="myRange"
+                />
+                <br />
+                Deployment
+                <input
+                  type="range"
+                  min="1"
+                  max="100"
+                  value="85"
+                  class="slider"
+                  id="myRange"
+                />
+                <br />
+              </div>
+              <br />
+              <!--Additional Skills -->
+              <p>
+                <b class="centring">Additional Skills</b>
+              </p>
+              <br />
+              <div class="slider">
+                Project Management
+                <input
+                  type="range"
+                  min="1"
+                  max="100"
+                  value="80"
+                  class="slider"
+                  id="myRange"
+                />
+                Recrutment <input type="range" min="1" max="100" value="70" />
+                <br />
+                Business Development
+                <input type="range" min="1" max="100" value="90" /><br />
+                Editing <input type="range" min="1" max="100" value="100" />
+                <br />
+                Fundraising
+                <input type="range" min="1" max="100" value="90" /><br />
+              </div>
+              <br />
+              <!--Work Experiance -->
+              <p>
+                <i class="fa fa-briefcase" aria-hidden="true" id="icons"></i>
+                <span class="topics">WORK EXPERIANCE</span> <br />
+                <b style="text-align: left">Event Manager</b>
+                <span style="float: right">03/2014 - 02/2017</span></span> <br />
+                
+             
+              C3 Presents, Washington DC </p>
+              
+              <ul style="text-align: justify">
+                <li>
+                  Lead and execute all phases of event planning and production
+                  spanning committee recruitment, training, vendor relationships
+                  and on-site facilitation.
+                </li>
+                <li>
+                  Brought new business to the organization through relentless
+                  networking and stewardship which helped the company win th bid
+                  for the State Department Summit on the Middle East and the
+                  companies largest civic event to date, the United State of
+                  Women.
+                </li>
+                <li>
+                  Exercise fiscal control over budget creation, tracking and
+                  reporting. Collaborate with employees at all organization
+                  levels to advance cohensive operations.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="col2">
+              <p>
+                <i class="fa fa-briefcase" aria-hidden="true" id="icons"></i>
+                <span class="topics">WORK EXPERIANCE</span> <br />
+                <b style="float: left">Community Relations </b>
+                <span style="float: right">06/2011 - 01/2014 </span><br />
+                <b>Manager</b><br>
+              Elder Housing, Los Angeles </p>
+              <ul style="text-align: justify">
+                <li>Arranging presentations and pitch deck.</li>
+                <li>
+                  Designing a PR plan and establishing important focus points.
+                </li>
+                <li>
+                  Designing, Creating and managing content across multiple
+                  communication platforms.
+                </li>
+                <li>Building relationshipswith key media players.</li>
+              </ul>
+              <!-- Education -->
+              <p>
+                <i
+                  class="fa fa-graduation-cap"
+                  aria-hidden="true"
+                  id="icons"
+                ></i>
+                <span class="topics">EDUCATION</span><br />
+                <b style="text-align: left">Engineering Immersion </b>
+                <span style="float: right">11/2018 - 06/2018</span> <br />
+                <b>Program</b><br />
+
+                Thinkful, Chicago, IL
+              </p>
+              Project-Focused intensive program with emphasis on Mongo, Express,
+              React and Javscript (MERN) techincal stack.<br />
+              <br />
+              <ul style="text-align: justify">
+                <li>
+                  Developed a full-stack web application, "Renew U", using React
+                  that allows users to explore various aspects of meditation.
+                  User's progress is stored on a backend created using Node and
+                  MongoDB.
+                </li>
+                <li>
+                  Developed a language learning app,"Foodie Phonetics" using
+                  spaced repetition and a linked list data structure. React was
+                  used to create the front end components while Node and Mongo
+                  were used to create a backend that stores user data.
+                </li>
+                <li>
+                  Developed a concierge app, "Pley" for individuals looking for
+                  curated suggestions when visitinga new place. React was used
+                  to develop the front end which includes real-time chat, drag
+                  and drop and verity of advanced features. the backend built
+                  using Node, Express and Mongo takes advantages of well
+                  developed RESTful API, GEospatial searching and user
+                  authentication with JWT.
+                </li>
+              </ul>
+              <p>
+                <b style="text-align: left">BA, English</b>
+                <span style="float: right"> 09/2001 - 09/2005</span><br />
+
+                University of California, Los Angeles
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
